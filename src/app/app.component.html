@@ -26,7 +26,8 @@
         </div>
       </ul>
       <p appBasicHightlight>using BasicHighlightDirective</p>
-      <p appBetterHighlight>using BetterHighlightDirective</p>
+      <p appBetterHighlight="grey" defaultColor="yellow">using BetterHighlightDirective</p>
+      <p [appBetterHighlight]="'grey'" [defaultColor]="'yellow'">using BetterHighlightDirective</p>
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
